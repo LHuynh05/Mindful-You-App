@@ -1,4 +1,4 @@
-<h1>Stories</h1>
+<h1>Entries</h1>
 <div class="row">
     {{#each stories}}
         <div class="col s12 m4">
@@ -7,7 +7,7 @@
                    {{{editIcon user ../user _id}}} 
                 </div>
                 <div class="card-content center-align"><h5>{{title}}</h5>
-                <p>{{stripTags (truncate body 150)}}</p>
+                <p>{{stripTags (truncate body 50)}}</p>
                 <br>
                 <div class="chip">
                     <img src="{{user.image}}" alt="">
